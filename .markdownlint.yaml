@@ -1,0 +1,10 @@
+MD013:
+  line_length: 100
+  heading_line_length: 100
+  code_block_line_length: 100
+
+# Relax rules for Keep A Changelog format
+MD022: false
+MD024:
+  allow_different_nesting: true
+MD032: false

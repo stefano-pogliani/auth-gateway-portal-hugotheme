@@ -1,0 +1,5 @@
+title = "AuthGateway Portal Example"
+baseURL = "https://portal.yourdomain.local"
+languageCode = "en-gb"
+theme = "auth-gateway-portal-hugotheme"
+themesDir = "../.."

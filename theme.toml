@@ -1,0 +1,12 @@
+name = "Auth Gateway Portal"
+license = "MIT"
+licenselink = "https://github.com/stefano-pogliani/auth-gateway-portal-hugotheme/blob/master/LICENSE"
+description = ""
+homepage = "https://github.com/stefano-pogliani/auth-gateway-portal-hugotheme"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Stefano Pogliani"
+  homepage = "https://spogliani.net/"
