@@ -1,0 +1,14 @@
+<div class="col-12 col-sm-6 col-md-3 app-card">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">{{ .title }}</h4>
+      {{ if .description }}
+      <p class="card-text">{{ .description }}</p>
+      {{ end }}
+      {{ $partial := (print "catalogue-entry/tag-" (.tag | default "unknown" ) ".html" )}}
+      {{ partial $partial . }}
+      <br />
+      <a href="{{ .url }}" class="card-link">Access content</a>
+    </div>
+  </div>
+</div>

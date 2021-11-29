@@ -1,5 +1,30 @@
-<html>
-  <body>
-    TODO
-  </body>
-</html>
+{{ define "main" }}
+<div class="container">
+  {{/* Render all configured applications, in the configured order. */}}
+  {{ $catalogue := slice }}
+  {{ $data := .Site.Data }}
+  {{ range (.Site.Params.catalogue | default (slice "catalogue")) }}
+    {{ $bit := index $data . }}
+    {{ if $bit }}
+      {{ $catalogue = $catalogue | append $bit }}
+    {{ end }}
+  {{ end }}
+  {{ if $catalogue }}
+  <div class="row">
+    {{ range $catalogue }}
+      {{ partial "catalogue-entry/entry.html" . }}
+    {{ end }}
+  </div>
+
+  {{/* Render a helpful message if no entries are configured */}}
+  {{ else }}
+  <div class="alert alert-info" role="alert">
+    <h4 class="alert-heading"><b>No apps to show</b></h4>
+    <p>No applications are configured.</p>
+    <hr>
+    Configure catalogue entries in your <code>data/catalogue.[toml|json|yml|yaml]</code>
+    to see something here :-)
+  </div>
+  {{ end }}
+</div>
+{{ end }}

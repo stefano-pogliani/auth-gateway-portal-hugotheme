@@ -3,3 +3,11 @@ baseURL = "https://portal.yourdomain.local"
 languageCode = "en-gb"
 theme = "auth-gateway-portal-hugotheme"
 themesDir = "../.."
+
+disableKinds = ["section", "taxonomy", "term", "RSS", "sitemap"]
+enableRobotsTXT = true
+publishDir = "dist"
+
+[params]
+  catalogue = ["catalogue", "non-existing-entry"]
+  description = "An example application catalogue"

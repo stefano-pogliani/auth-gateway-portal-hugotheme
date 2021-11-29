@@ -1,0 +1,35 @@
+---
+- title: Audited app
+  description: |
+    An audited app is proxied by AuthGateway so activity is logged but no authentication is checked
+  tag: audited
+  url: https://audited.yourdomain.local
+
+- title: Protected app
+  description: |
+    A protected app is proxied and checked by AuthGateway so only requests from valid
+    sessions is passed upstream.
+  tag: protected
+  url: https://protected.yourdomain.local/
+
+- title: External link
+  description: |
+    An external link is just a card with an optional description.
+    Requestes are neither logged nor authenticated.
+  tag: link
+  url: https://spogliani.net
+
+- title: Partially protected app
+  description: |
+    A partially protected app is proxied by AuthGateway and generally checked for validity
+    but some endpoints or patterns are just logged and not checked.
+  tag: partial
+  url: https://partial.yourdomain.local/
+
+- title: Link without a type
+  description: A link without a type attribute is of type Unknown.
+  url: /dev/null
+
+- title: Description is optional
+  tag: protected
+  url: https://protected.yourdomain.local/
