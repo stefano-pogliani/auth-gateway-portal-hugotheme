@@ -56,6 +56,8 @@ Catalogue file schema, in YAML format:
   url: https://service.yourdomain.local/
 ```
 
+Hugo Site configuration file:
+
 ```toml
 # The site title is displaied in the top bar by default.
 title = "AuthGateway Portal Example"
