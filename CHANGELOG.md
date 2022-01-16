@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## 0.1.1 - 2022-01-16
+### Changed
+- Replace use of inline CSS sytle with CSS files to allow use of a safe CSP header.
+
 ## 0.1.0 - 2021-11-29
 ### Added
 - Portal interface.

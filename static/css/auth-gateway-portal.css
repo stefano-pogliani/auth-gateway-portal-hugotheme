@@ -22,6 +22,10 @@ nav img.logo {
   margin-bottom: 2em;
 }
 
+.app-card span.tag {
+  font-size: small;
+}
+
 .navbar-gravatar {
   cursor: pointer;
   max-height: 32px;
